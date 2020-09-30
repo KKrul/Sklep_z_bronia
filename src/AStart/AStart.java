@@ -132,7 +132,7 @@ public class AStart extends JFrame implements ItemListener{
         catch(SQLException error_polaczenie) {
             System.out.println("Błąd połączenia z bazą danych " + error_polaczenie);}
         catch(ClassNotFoundException error_sterownik) {
-            System.out.println("Brak sterownika");}    
+            System.out.println("Brak sterownika" + error_sterownik);}
         }
     }
     

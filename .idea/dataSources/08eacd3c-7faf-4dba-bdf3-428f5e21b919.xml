@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Microsoft SQL Server (jTds) - @localhost">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.19">
+    <root id="1">
+      <ServerVersion>15.0.2000</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="bd_java">
+      <ObjectId>5</ObjectId>
+      <Current>1</Current>
+      <Collation>Polish_CI_AS</Collation>
+      <Fingerprint>5.44102/EA4CA194-5C16-463C-BE48-E1B58E95B6D9@DESKTOP-A9CVQG8</Fingerprint>
+    </database>
+    <database id="3" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Collation>Polish_CI_AS</Collation>
+      <Fingerprint>1.37717/00000000-0000-0000-0000-000000000000@DESKTOP-A9CVQG8</Fingerprint>
+    </database>
+    <database id="4" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>Polish_CI_AS</Collation>
+    </database>
+    <database id="5" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>Polish_CI_AS</Collation>
+    </database>
+    <database id="6" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>Polish_CI_AS</Collation>
+    </database>
+    <schema id="7" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="12" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="13" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="14" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="15" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="16" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="17" parent="2" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2020-09-30.13:39:29.657</IntrospectionTimestamp>
+      <Current>1</Current>
+    </schema>
+    <schema id="18" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="19" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="20" parent="17" name="adresy">
+      <ObjectId>1605580758</ObjectId>
+      <CreatedTimestamp>2020-09-30.13:15:44.153</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:45.033</ModifiedTimestamp>
+    </table>
+    <table id="21" parent="17" name="faktury">
+      <ObjectId>2101582525</ObjectId>
+      <CreatedTimestamp>2020-09-30.13:15:44.167</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.167</ModifiedTimestamp>
+    </table>
+    <table id="22" parent="17" name="firmy">
+      <ObjectId>1653580929</ObjectId>
+      <CreatedTimestamp>2020-09-30.13:15:44.153</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.160</ModifiedTimestamp>
+    </table>
+    <table id="23" parent="17" name="kategorie">
+      <ObjectId>1941581955</ObjectId>
+      <CreatedTimestamp>2020-09-30.13:15:44.163</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.167</ModifiedTimestamp>
+    </table>
+    <table id="24" parent="17" name="klienci">
+      <ObjectId>1733581214</ObjectId>
+      <CreatedTimestamp>2020-09-30.13:15:44.157</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.167</ModifiedTimestamp>
+    </table>
+    <table id="25" parent="17" name="kontakty">
+      <ObjectId>1525580473</ObjectId>
+      <CreatedTimestamp>2020-09-30.13:15:44.153</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:45.030</ModifiedTimestamp>
+    </table>
+    <table id="26" parent="17" name="pracownicy">
+      <ObjectId>1845581613</ObjectId>
+      <CreatedTimestamp>2020-09-30.13:15:44.160</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.167</ModifiedTimestamp>
+    </table>
+    <table id="27" parent="17" name="produkty">
+      <ObjectId>1973582069</ObjectId>
+      <CreatedTimestamp>2020-09-30.13:15:44.163</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.167</ModifiedTimestamp>
+    </table>
+    <table id="28" parent="17" name="zamowienia">
+      <ObjectId>2021582240</ObjectId>
+      <CreatedTimestamp>2020-09-30.13:15:44.163</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:45.030</ModifiedTimestamp>
+    </table>
+    <column id="29" parent="20" name="id_adres">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="20" name="miejscowosc">
+      <Position>2</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="20" name="powiat">
+      <Position>3</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="20" name="wojewodztwo">
+      <Position>4</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="20" name="kod_pocztowy">
+      <Position>5</Position>
+      <DataType>varchar(6 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="20" name="ulica">
+      <Position>6</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="20" name="nr_budynku">
+      <Position>7</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="20" name="nr_lokalu">
+      <Position>8</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="37" parent="20" name="PK__adresy__8A89DA2B5D4C48C1">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_adres</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="38" parent="20" name="PK__adresy__8A89DA2B5D4C48C1">
+      <ObjectId>1621580815</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.153</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.153</ModifiedTimestamp>
+      <ColNames>id_adres</ColNames>
+      <UnderlyingIndexName>PK__adresy__8A89DA2B5D4C48C1</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="39" parent="20" name="CK__adresy__kod_pocz__619B8048">
+      <ObjectId>1637580872</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.153</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.153</ModifiedTimestamp>
+      <ColNames>kod_pocztowy</ColNames>
+      <Predicate>[kod_pocztowy] like &apos;[0-9][0-9]-[0-9][0-9][0-9]&apos;</Predicate>
+    </check>
+    <trigger id="40" parent="20" name="dodaj_adres">
+      <ObjectId>18099105</ObjectId>
+      <SourceTextLength>659</SourceTextLength>
+      <CreatedTimestamp>2020-09-30.13:15:45.020</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:45.020</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>instead-of</Turn>
+    </trigger>
+    <trigger id="41" parent="20" name="aktualizuj_adres">
+      <ObjectId>82099333</ObjectId>
+      <SourceTextLength>938</SourceTextLength>
+      <CreatedTimestamp>2020-09-30.13:15:45.033</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:45.033</ModifiedTimestamp>
+      <Events>U</Events>
+      <Turn>instead-of</Turn>
+    </trigger>
+    <column id="42" parent="21" name="id_faktura">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="21" name="id_zamowienia">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="21" name="data_wystawienia">
+      <Position>3</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="21" name="data_sprzedazy">
+      <Position>4</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="21" name="procent_VAT">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="21" name="wartosc_VAT">
+      <Position>6</Position>
+      <DataType>decimal(10,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="21" name="cena_netto">
+      <Position>7</Position>
+      <DataType>decimal(10,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="21" name="cena_brutto">
+      <Position>8</Position>
+      <DataType>decimal(10,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="21" name="miejsce_wystawienia">
+      <Position>9</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="21" name="sposob_zaplaty">
+      <Position>10</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="52" parent="21" name="PK__faktury__FCBA8FE2080585A7">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_faktura</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="53" parent="21" name="PK__faktury__FCBA8FE2080585A7">
+      <ObjectId>2117582582</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.167</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.167</ModifiedTimestamp>
+      <ColNames>id_faktura</ColNames>
+      <UnderlyingIndexName>PK__faktury__FCBA8FE2080585A7</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="54" parent="21" name="FK__faktury__id_zamo__7F2BE32F">
+      <ObjectId>2133582639</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.167</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.167</ModifiedTimestamp>
+      <ColNames>id_zamowienia</ColNames>
+      <RefTableId>2021582240</RefTableId>
+      <RefTableName>zamowienia</RefTableName>
+      <RefKeyName>PK__zamowien__D19B897C296A3F1A</RefKeyName>
+      <RefColNames>id_zamowienie</RefColNames>
+    </foreign-key>
+    <column id="55" parent="22" name="id_firma">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="22" name="id_adres">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="22" name="nazwa_firma">
+      <Position>3</Position>
+      <DataType>varchar(100 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="22" name="REGON">
+      <Position>4</Position>
+      <DataType>varchar(9 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="22" name="NIP">
+      <Position>5</Position>
+      <DataType>varchar(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="22" name="imie_wlasciciel">
+      <Position>6</Position>
+      <DataType>varchar(40 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="22" name="nazwisko_wlasciciel">
+      <Position>7</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="62" parent="22" name="PK__firmy__4535EF169728C623">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_firma</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="63" parent="22" name="PK__firmy__4535EF169728C623">
+      <ObjectId>1669580986</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.157</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.157</ModifiedTimestamp>
+      <ColNames>id_firma</ColNames>
+      <UnderlyingIndexName>PK__firmy__4535EF169728C623</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="64" parent="22" name="FK__firmy__id_adres__6477ECF3">
+      <ObjectId>1685581043</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.157</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.157</ModifiedTimestamp>
+      <ColNames>id_adres</ColNames>
+      <RefTableId>1605580758</RefTableId>
+      <RefTableName>adresy</RefTableName>
+      <RefKeyName>PK__adresy__8A89DA2B5D4C48C1</RefKeyName>
+      <RefColNames>id_adres</RefColNames>
+    </foreign-key>
+    <check id="65" parent="22" name="CK__firmy__NIP__66603565">
+      <ObjectId>1717581157</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.157</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.157</ModifiedTimestamp>
+      <ColNames>NIP</ColNames>
+      <Predicate>[NIP] like &apos;[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]&apos;</Predicate>
+    </check>
+    <check id="66" parent="22" name="CK__firmy__REGON__656C112C">
+      <ObjectId>1701581100</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.157</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.157</ModifiedTimestamp>
+      <ColNames>REGON</ColNames>
+      <Predicate>[REGON] like &apos;[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]&apos;</Predicate>
+    </check>
+    <column id="67" parent="23" name="id_kategoria">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="23" name="nazwa_kategoria">
+      <Position>2</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="69" parent="23" name="PK__kategori__EB93B73B4C3A9259">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_kategoria</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="70" parent="23" name="PK__kategori__EB93B73B4C3A9259">
+      <ObjectId>1957582012</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.163</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.163</ModifiedTimestamp>
+      <ColNames>id_kategoria</ColNames>
+      <UnderlyingIndexName>PK__kategori__EB93B73B4C3A9259</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="71" parent="24" name="id_klient">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="24" name="id_adres">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="73" parent="24" name="id_kontakt">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="24" name="id_firma">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="75" parent="24" name="nazwisko">
+      <Position>5</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="76" parent="24" name="imie">
+      <Position>6</Position>
+      <DataType>varchar(40 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="77" parent="24" name="PESEL">
+      <Position>7</Position>
+      <DataType>varchar(11 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="78" parent="24" name="login_kl">
+      <Position>8</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="79" parent="24" name="haslo_kl">
+      <Position>9</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="80" parent="24" name="PK__klienci__C6465E7792A10EE1">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_klient</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="81" parent="24" name="UQ__klienci__C2C9010505562408">
+      <Position>2</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>login_kl</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="82" parent="24" name="PK__klienci__C6465E7792A10EE1">
+      <ObjectId>1749581271</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.157</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.157</ModifiedTimestamp>
+      <ColNames>id_klient</ColNames>
+      <UnderlyingIndexName>PK__klienci__C6465E7792A10EE1</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="83" parent="24" name="UQ__klienci__C2C9010505562408">
+      <ObjectId>1765581328</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.157</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.157</ModifiedTimestamp>
+      <ColNames>login_kl</ColNames>
+      <UnderlyingIndexName>UQ__klienci__C2C9010505562408</UnderlyingIndexName>
+    </key>
+    <foreign-key id="84" parent="24" name="FK__klienci__id_adre__6A30C649">
+      <ObjectId>1781581385</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.157</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.157</ModifiedTimestamp>
+      <ColNames>id_adres</ColNames>
+      <RefTableId>1605580758</RefTableId>
+      <RefTableName>adresy</RefTableName>
+      <RefKeyName>PK__adresy__8A89DA2B5D4C48C1</RefKeyName>
+      <RefColNames>id_adres</RefColNames>
+    </foreign-key>
+    <foreign-key id="85" parent="24" name="FK__klienci__id_kont__6B24EA82">
+      <ObjectId>1797581442</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.157</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.157</ModifiedTimestamp>
+      <ColNames>id_kontakt</ColNames>
+      <RefTableId>1525580473</RefTableId>
+      <RefTableName>kontakty</RefTableName>
+      <RefKeyName>PK__kontakty__DA1A201CEAF5513A</RefKeyName>
+      <RefColNames>id_kontakt</RefColNames>
+    </foreign-key>
+    <foreign-key id="86" parent="24" name="FK__klienci__id_firm__6C190EBB">
+      <ObjectId>1813581499</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.157</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.157</ModifiedTimestamp>
+      <ColNames>id_firma</ColNames>
+      <RefTableId>1653580929</RefTableId>
+      <RefTableName>firmy</RefTableName>
+      <RefKeyName>PK__firmy__4535EF169728C623</RefKeyName>
+      <RefColNames>id_firma</RefColNames>
+    </foreign-key>
+    <check id="87" parent="24" name="CK__klienci__PESEL__6D0D32F4">
+      <ObjectId>1829581556</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.160</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.160</ModifiedTimestamp>
+      <ColNames>PESEL</ColNames>
+      <Predicate>[PESEL] like &apos;[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]&apos;</Predicate>
+    </check>
+    <column id="88" parent="25" name="id_kontakt">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="89" parent="25" name="nr_tel_1">
+      <Position>2</Position>
+      <DataType>varchar(9 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="90" parent="25" name="nr_tel_2">
+      <Position>3</Position>
+      <DataType>varchar(9 char)|0s</DataType>
+    </column>
+    <column id="91" parent="25" name="fax">
+      <Position>4</Position>
+      <DataType>varchar(9 char)|0s</DataType>
+    </column>
+    <column id="92" parent="25" name="email">
+      <Position>5</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="93" parent="25" name="strona_www">
+      <Position>6</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+    </column>
+    <index id="94" parent="25" name="PK__kontakty__DA1A201CEAF5513A">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_kontakt</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="95" parent="25" name="PK__kontakty__DA1A201CEAF5513A">
+      <ObjectId>1541580530</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.153</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.153</ModifiedTimestamp>
+      <ColNames>id_kontakt</ColNames>
+      <UnderlyingIndexName>PK__kontakty__DA1A201CEAF5513A</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="96" parent="25" name="CK__kontakty__fax__5EBF139D">
+      <ObjectId>1589580701</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.153</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.153</ModifiedTimestamp>
+      <ColNames>fax</ColNames>
+      <Predicate>[fax] like &apos;[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]&apos;</Predicate>
+    </check>
+    <check id="97" parent="25" name="CK__kontakty__nr_tel__5CD6CB2B">
+      <ObjectId>1557580587</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.153</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.153</ModifiedTimestamp>
+      <ColNames>nr_tel_1</ColNames>
+      <Predicate>[nr_tel_1] like &apos;[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]&apos;</Predicate>
+    </check>
+    <check id="98" parent="25" name="CK__kontakty__nr_tel__5DCAEF64">
+      <ObjectId>1573580644</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.153</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.153</ModifiedTimestamp>
+      <ColNames>nr_tel_2</ColNames>
+      <Predicate>[nr_tel_2] like &apos;[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]&apos;</Predicate>
+    </check>
+    <trigger id="99" parent="25" name="dodaj_kontakt">
+      <ObjectId>34099162</ObjectId>
+      <SourceTextLength>1184</SourceTextLength>
+      <CreatedTimestamp>2020-09-30.13:15:45.023</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:45.023</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>instead-of</Turn>
+    </trigger>
+    <trigger id="100" parent="25" name="aktualizuj_kontakt">
+      <ObjectId>50099219</ObjectId>
+      <SourceTextLength>1677</SourceTextLength>
+      <CreatedTimestamp>2020-09-30.13:15:45.030</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:45.030</ModifiedTimestamp>
+      <Events>U</Events>
+      <Turn>instead-of</Turn>
+    </trigger>
+    <column id="101" parent="26" name="id_pracownik">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="102" parent="26" name="id_adres">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="103" parent="26" name="id_kontakt">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="104" parent="26" name="nazwisko">
+      <Position>4</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="105" parent="26" name="imie">
+      <Position>5</Position>
+      <DataType>varchar(40 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="106" parent="26" name="PESEL">
+      <Position>6</Position>
+      <DataType>varchar(11 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="107" parent="26" name="data_zatrudnienie">
+      <Position>7</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="108" parent="26" name="czy_aktywny">
+      <Position>8</Position>
+      <DataType>varchar(3 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="109" parent="26" name="login_pr">
+      <Position>9</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="110" parent="26" name="haslo_pr">
+      <Position>10</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="111" parent="26" name="status">
+      <Position>11</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="112" parent="26" name="PK__pracowni__417BA443DE877FD8">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_pracownik</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="113" parent="26" name="UQ__pracowni__C2C9BCD7A5DA62C9">
+      <Position>2</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>login_pr</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="114" parent="26" name="PK__pracowni__417BA443DE877FD8">
+      <ObjectId>1861581670</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.160</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.160</ModifiedTimestamp>
+      <ColNames>id_pracownik</ColNames>
+      <UnderlyingIndexName>PK__pracowni__417BA443DE877FD8</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="115" parent="26" name="UQ__pracowni__C2C9BCD7A5DA62C9">
+      <ObjectId>1877581727</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.160</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.160</ModifiedTimestamp>
+      <ColNames>login_pr</ColNames>
+      <UnderlyingIndexName>UQ__pracowni__C2C9BCD7A5DA62C9</UnderlyingIndexName>
+    </key>
+    <foreign-key id="116" parent="26" name="FK__pracownic__id_ad__70DDC3D8">
+      <ObjectId>1893581784</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.160</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.160</ModifiedTimestamp>
+      <ColNames>id_adres</ColNames>
+      <RefTableId>1605580758</RefTableId>
+      <RefTableName>adresy</RefTableName>
+      <RefKeyName>PK__adresy__8A89DA2B5D4C48C1</RefKeyName>
+      <RefColNames>id_adres</RefColNames>
+    </foreign-key>
+    <foreign-key id="117" parent="26" name="FK__pracownic__id_ko__71D1E811">
+      <ObjectId>1909581841</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.160</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.160</ModifiedTimestamp>
+      <ColNames>id_kontakt</ColNames>
+      <RefTableId>1525580473</RefTableId>
+      <RefTableName>kontakty</RefTableName>
+      <RefKeyName>PK__kontakty__DA1A201CEAF5513A</RefKeyName>
+      <RefColNames>id_kontakt</RefColNames>
+    </foreign-key>
+    <check id="118" parent="26" name="CK__pracownic__PESEL__72C60C4A">
+      <ObjectId>1925581898</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.160</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.160</ModifiedTimestamp>
+      <ColNames>PESEL</ColNames>
+      <Predicate>[PESEL] like &apos;[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]&apos;</Predicate>
+    </check>
+    <column id="119" parent="27" name="id_produkt">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="120" parent="27" name="id_kategoria">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="121" parent="27" name="nazwa_produkt">
+      <Position>3</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="122" parent="27" name="producent">
+      <Position>4</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="123" parent="27" name="model">
+      <Position>5</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="124" parent="27" name="kaliber">
+      <Position>6</Position>
+      <DataType>varchar(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="125" parent="27" name="dlugosc[mm]">
+      <Position>7</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="126" parent="27" name="masa[g]">
+      <Position>8</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="127" parent="27" name="dlugosc_lufy[mm]">
+      <Position>9</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="128" parent="27" name="pojemnosc_magazynka">
+      <Position>10</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="129" parent="27" name="cena">
+      <Position>11</Position>
+      <DataType>decimal(10,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="130" parent="27" name="stan[szt.]">
+      <Position>12</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="131" parent="27" name="PK__produkty__BA39295964B05CEE">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_produkt</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="132" parent="27" name="PK__produkty__BA39295964B05CEE">
+      <ObjectId>1989582126</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.163</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.163</ModifiedTimestamp>
+      <ColNames>id_produkt</ColNames>
+      <UnderlyingIndexName>PK__produkty__BA39295964B05CEE</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="133" parent="27" name="FK__produkty__id_kat__778AC167">
+      <ObjectId>2005582183</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.163</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.163</ModifiedTimestamp>
+      <ColNames>id_kategoria</ColNames>
+      <RefTableId>1941581955</RefTableId>
+      <RefTableName>kategorie</RefTableName>
+      <RefKeyName>PK__kategori__EB93B73B4C3A9259</RefKeyName>
+      <RefColNames>id_kategoria</RefColNames>
+    </foreign-key>
+    <column id="134" parent="28" name="id_zamowienie">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="135" parent="28" name="id_klient">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="136" parent="28" name="id_pracownik">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="137" parent="28" name="id_produkt">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="138" parent="28" name="data_zlozenia_zamowienia">
+      <Position>5</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="139" parent="28" name="czy_przyjeto_zamowienie">
+      <Position>6</Position>
+      <DataType>varchar(3 char)|0s</DataType>
+    </column>
+    <column id="140" parent="28" name="czy_zaplacono">
+      <Position>7</Position>
+      <DataType>varchar(3 char)|0s</DataType>
+    </column>
+    <column id="141" parent="28" name="czy_zrealizowano_zamowienie">
+      <Position>8</Position>
+      <DataType>varchar(3 char)|0s</DataType>
+    </column>
+    <column id="142" parent="28" name="data_realizacji_zamowienia">
+      <Position>9</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <index id="143" parent="28" name="PK__zamowien__D19B897C296A3F1A">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_zamowienie</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="144" parent="28" name="PK__zamowien__D19B897C296A3F1A">
+      <ObjectId>2037582297</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.167</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.167</ModifiedTimestamp>
+      <ColNames>id_zamowienie</ColNames>
+      <UnderlyingIndexName>PK__zamowien__D19B897C296A3F1A</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="145" parent="28" name="FK__zamowieni__id_kl__7A672E12">
+      <ObjectId>2053582354</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.167</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.167</ModifiedTimestamp>
+      <ColNames>id_klient</ColNames>
+      <RefTableId>1733581214</RefTableId>
+      <RefTableName>klienci</RefTableName>
+      <RefKeyName>PK__klienci__C6465E7792A10EE1</RefKeyName>
+      <RefColNames>id_klient</RefColNames>
+    </foreign-key>
+    <foreign-key id="146" parent="28" name="FK__zamowieni__id_pr__7B5B524B">
+      <ObjectId>2069582411</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.167</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.167</ModifiedTimestamp>
+      <ColNames>id_pracownik</ColNames>
+      <RefTableId>1845581613</RefTableId>
+      <RefTableName>pracownicy</RefTableName>
+      <RefKeyName>PK__pracowni__417BA443DE877FD8</RefKeyName>
+      <RefColNames>id_pracownik</RefColNames>
+    </foreign-key>
+    <foreign-key id="147" parent="28" name="FK__zamowieni__id_pr__7C4F7684">
+      <ObjectId>2085582468</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-09-30.13:15:44.167</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:44.167</ModifiedTimestamp>
+      <ColNames>id_produkt</ColNames>
+      <RefTableId>1973582069</RefTableId>
+      <RefTableName>produkty</RefTableName>
+      <RefKeyName>PK__produkty__BA39295964B05CEE</RefKeyName>
+      <RefColNames>id_produkt</RefColNames>
+    </foreign-key>
+    <trigger id="148" parent="28" name="dodaj_zamowienie">
+      <ObjectId>2099048</ObjectId>
+      <SourceTextLength>936</SourceTextLength>
+      <CreatedTimestamp>2020-09-30.13:15:45.020</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:45.020</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>instead-of</Turn>
+    </trigger>
+    <trigger id="149" parent="28" name="aktualizuj_zamowienie">
+      <ObjectId>66099276</ObjectId>
+      <SourceTextLength>1318</SourceTextLength>
+      <CreatedTimestamp>2020-09-30.13:15:45.030</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-30.13:15:45.030</ModifiedTimestamp>
+      <Events>U</Events>
+      <Turn>instead-of</Turn>
+    </trigger>
+  </database-model>
+</dataSource>
